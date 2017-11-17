@@ -3,11 +3,15 @@ module City where
 
 import Infection
 
+data Nat where
+  Zero :: Nat
+  Succ :: Nat -> Nat
+
 data City = City
   { name :: String
   , connected_cities  :: [City]
   , default_infection :: Color
-  , infections        :: [Infection]
+  , infections        :: [(Infection, Nat)]
   , research_station  :: Bool
   }
 
