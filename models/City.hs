@@ -18,7 +18,54 @@ data Color where
   Yellow :: Color
 
 game_cities :: [city]
-game_cities = [algiers, atlanta, baghdad, bangkok]
+game_cities = [ algiers
+              , atlanta
+	      , baghdad
+	      , bangkok
+	      , beijing
+	      , bogota
+	      , buenos_aires
+	      , cairo
+	      , chennai
+	      , chicago
+	      , delhi
+	      , essen
+	      , ho_chi_minh
+	      , hong_kong
+	      , istanbul
+	      , jakarta
+	      , johannesburg
+	      , karachi
+	      , khartoum
+	      , kinshasa
+	      , kolkata
+	      , lagos
+	      , lima
+	      , london
+	      , los_angeles
+	      , madrid
+	      , manila
+	      , mexico_city
+	      , miami
+	      , milan
+	      , montreal
+	      , moscow
+	      , mumbai
+	      , new_york
+	      , osaka
+	      , paris
+	      , riyadh
+	      , san_francisco
+	      , santiago
+	      , sao_paulo
+	      , seoul
+	      , shanghai
+	      , st_petersburg
+	      , sydney
+	      , taipei
+	      , tehran
+	      , tokyo
+	      , washington]
 
 algiers       =
   City ("Algiers", [cairo, istanbul, paris, madrid], Black, [], False)
