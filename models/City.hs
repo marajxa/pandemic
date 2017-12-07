@@ -7,12 +7,21 @@ data City = City
   , default_infection :: Color
   , research_station  :: Bool
   }
+ 
+instance Show City where
+  show (City n c d r) = show n ++ ": " ++ "[" ++ show_names c ++ "] " ++ show d ++ " " ++ show r
+    where
+      show_names :: [City] -> [Char]
+      show_names [] = []
+      show_names [(City name _ _ _)]    = show name
+      show_names ((City name _ _ _):cs) = show name ++ ", " ++ show_names cs
 
 data Color where
   Black  :: Color
   Blue   :: Color
   Red    :: Color
   Yellow :: Color
+  deriving (Eq, Show)
 
 game_cities :: [City]
 game_cities = [ algiers
