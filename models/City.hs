@@ -6,6 +6,7 @@ data City = City
   , connected_cities  :: [City]
   , research_station  :: Bool
   }
+  deriving Eq
  
 instance Show City where
   show (City n c r) = show n ++ ": " ++ "[" ++ show_names c ++ "] " ++ show r
