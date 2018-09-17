@@ -8,6 +8,13 @@ data InfectionCard = InfectionCard
   , default_infection :: Color
   }
   deriving Show
+  
+data Color where
+  Black  :: Color
+  Blue   :: Color
+  Red    :: Color
+  Yellow :: Color
+  deriving (Eq, Show)
 
 game_infectioncards :: [InfectionCard]
 game_infectioncards = [ algiers_infectioncard
