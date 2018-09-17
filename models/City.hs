@@ -16,13 +16,6 @@ instance Show City where
       show_names [(City name _ _)]    = show name
       show_names ((City name _ _):cs) = show name ++ ", " ++ show_names cs
 
-data Color where
-  Black  :: Color
-  Blue   :: Color
-  Red    :: Color
-  Yellow :: Color
-  deriving (Eq, Show)
-
 game_cities :: [City]
 game_cities = [ algiers
               , atlanta
